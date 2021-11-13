@@ -1,6 +1,6 @@
 Universal Lag Switch
 ========
-Powershell lag switch that leverages windows firewall to bottleneck the target process connection
+Powershell lag switch that leverages windows firewall to bottleneck the target process
 
 How to use
 ------------

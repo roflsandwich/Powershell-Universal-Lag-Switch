@@ -4,6 +4,7 @@ cls
 Write-Host "[**] Welcome to Roflsandwich Lag Switch, select the target process in the next window"
 Read-Host "[**] Press enter continue"
 $processName = (Get-Process | Out-GridView -Title "Select target process" -PassThru).Path.split('\')[-1]
+if ($processName -eq $null){exit}
 cls
 Write-Host "[**] Loaded process: $processName"
 Write-Host "[**] Use CAPSLOCK to toggle lag switch"
